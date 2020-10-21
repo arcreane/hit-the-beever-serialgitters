@@ -1,33 +1,32 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class round {
+public class board {
 
-    public static String refresh(int difficulte){
-        String[][] plateau= new String[difficulte][difficulte];
+    public static String refresh(int difficulty){
+        String[][] plateau= new String[difficulty][difficulty];
         //Initialisation des valeurs random pour axes x et y
-        int actualX=ThreadLocalRandom.current().nextInt(0, difficulte);
-        int actualY=ThreadLocalRandom.current().nextInt(0, difficulte);
-        String reponse = actualX+" "+actualY;
-
+        int actualX=ThreadLocalRandom.current().nextInt(1, difficulty);
+        int actualY=ThreadLocalRandom.current().nextInt(1, difficulty);
+        //Incrémente de 1 la réponse pour qu'elle corresponde avec la position visuelle de la marmotte
+        String actualCoordinates = (actualY+1)+" "+(actualX+1);
 
         //Utilisation de boucles imbriquées pour assigner une valeur pour chaque coordonnée
-        for (int row=0; row<plateau.length; row++) {
-            for (int col=0; col<plateau[row].length; col++) {
+        for (int row=0; row<difficulty; row++) {
+            for (int col=0; col<difficulty; col++) {
+
                 //Si les coordonnées sont celles de l'apparition de la marmotte on affiche un B, sinon rien
                 if(row==actualX && col==actualY){
                     plateau[row][col]="[B]";
-                    System.out.println(plateau[row][col]);
+                    System.out.print(plateau[row][col]);
                 }else{
                     plateau[row][col]="[ ]";
-                    System.out.println(plateau[row][col]+" ");
+                    System.out.print(plateau[row][col]);
                 }
-                System.out.println();
             }
+            System.out.println(" ");
         }
-        //Retourne les coordonnées exactes de la marmotte pour comparaison avec entrée scannée
-        return reponse;
+        return actualCoordinates; //Retourne les coordonnées exactes de la marmotte pour comparaison avec entrée scannée
     }
 }
