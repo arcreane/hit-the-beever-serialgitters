@@ -11,7 +11,7 @@ public class Main {
 
 
 
-            //Demande si utilisateur veut continuer
+            //A remplacer par le menu de sélection partie, highscore et quit
             Scanner sc = new Scanner(System.in);
             System.out.println("Recommencer?");
             String reponse = sc.nextLine();
