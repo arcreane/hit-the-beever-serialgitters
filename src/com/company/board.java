@@ -10,12 +10,17 @@ public class board {
         int actualX=ThreadLocalRandom.current().nextInt(1, difficulty);
         int actualY=ThreadLocalRandom.current().nextInt(1, difficulty);
         //Incrémente de 1 la réponse pour qu'elle corresponde avec la position visuelle de la marmotte
-        String actualCoordinates = (actualY+1)+" "+(actualX+1);
+        String actualCoordinates = (actualY)+" "+(actualX);
 
+        System.out.print("  ");
+        for(int col=0; col<difficulty; col++){
+            System.out.print(" "+col+" ");
+        }
+        System.out.println(" ");
         //Utilisation de boucles imbriquées pour assigner une valeur pour chaque coordonnée
         for (int row=0; row<difficulty; row++) {
+            System.out.print(row+" ");
             for (int col=0; col<difficulty; col++) {
-
                 //Si les coordonnées sont celles de l'apparition de la marmotte on affiche un B, sinon rien
                 if(row==actualX && col==actualY){
                     plateau[row][col]="[B]";

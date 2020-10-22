@@ -8,7 +8,7 @@ public class Main {
         boolean keepUp = false;
         do {
             //Appel des fonctions etc
-
+            board.refresh(5);
 
 
             //A remplacer par le menu de sélection partie, highscore et quit
