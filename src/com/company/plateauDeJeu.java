@@ -34,4 +34,7 @@ public class plateauDeJeu {
         }
         return actualCoordinates; //Retourne les coordonnées exactes de la marmotte pour comparaison avec entrée scannée
     }
+
+
+
 }
