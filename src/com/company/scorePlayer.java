@@ -1,11 +1,11 @@
 package com.company;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 
 import java.util.Scanner;
 
-public class scoreGame {
-    Scanner scanner = new Scanner(System.in);
+public class scorePlayer {
+    /*Scanner scanner = new Scanner(System.in);
     String inputName = scanner.nextLine() ;
     int score ;
     String[][] arrayScore = new String[5][2];
@@ -38,5 +38,5 @@ public class scoreGame {
             }
         }saveScore(score)++ ;
      return arrayScore(score) ;
-    }
+    }*/
 }

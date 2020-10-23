@@ -15,7 +15,7 @@ public class Main {
             System.out.println("3 : Quitter");
 
             String menu = input.nextLine();
-           if(menu=="1") { //Si on lance une partie
+           if(menu.equals("1")) { //Si on lance une partie
                //On initialise le score à 0
                int scoreJoueur=0;
                System.out.println("menu : nouvellePartie");
@@ -24,15 +24,15 @@ public class Main {
                String coordonneesMarmotte = plateauDeJeu.refresh(difficulte);
 
                //Lancement du timer et récupération de la string de coordonnées rentrées par le joueur
-               String coordonneesJoueur = TimerTime.run();
+               //String coordonneesJoueur = TimerTime.run();
 
                //Comparaison coordonnées entrées par joueur et position réelle de la marmotte, si match = incrémente le score de 1 sinon incrémente de zéro
-               int incrementationScore = comparerCoordonnees.compare(coordonneesJoueur,coordonneesMarmotte);
-               scoreJoueur=scoreJoueur+incrementationScore;
+               //int incrementationScore = comparerCoordonnees.compare(coordonneesJoueur,coordonneesMarmotte);
+               //1scoreJoueur=scoreJoueur+incrementationScore;
 
-           }else if(menu=="2") {
+           }else if(menu.equals("2")){
                System.out.println("menu : resultat");
-           }else if(menu=="3"){
+           }else if(menu.equals("3")){
                System.out.println("menu : quitter");
                continuer=false;
                break;

@@ -4,7 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class timer {
-    public static void main (final string[]args){
+    /*public static void main (final string[]args){
     Timer gameTimer = new Timer();
     TimerTask =new Timer (true);
     gameTimer.scheduleAtFixedRate(new TimerTask() {
@@ -23,5 +23,5 @@ public class timer {
                     }
     }
 
-}
+}*/
 }
