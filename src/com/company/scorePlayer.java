@@ -12,7 +12,7 @@ public class scoreGame {
 
     //fonction pour sauvegarder les scores
 
-    public static String saveScore (int score){
+    private static String saveScore (int score){
         for (int i = 0; i < 5; i++) {
             System.out.println(arrayScore[inputName]+" "+arrayScore[i]);
         }
@@ -20,16 +20,22 @@ public class scoreGame {
     return saveScore(score);}
 
     //trier le tableau de score dans l ordre decroissant
-    
+
     public static String arrayScore(int score){
 
         int temp ;
-       if ((arrayScore[inputName][i+1])>(arrayScore[inputName][i])){
-           temp =arrayScore[i+1];
-           arrayScore[i+1]=arrayScore[i];
-           arrayScore[i]=temp;}
+        for (int i = 0; i < 5; i++) {
+            for (int j=i+1 ; j<5 ;j++) {
 
-       saveScore(score)++ ;
+
+                if ((arrayScore[inputName][j]) > (arrayScore[inputName][i])) {
+                    temp = arrayScore[j];
+                    arrayScore[j] = arrayScore[i];
+                    arrayScore[i] = temp;
+                }
+
+            }
+        }saveScore(score)++ ;
      return arrayScore(score) ;
     }
 }
