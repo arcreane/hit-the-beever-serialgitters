@@ -1,6 +1,9 @@
 package com.company;
 
-public class comparerCoordonnees {
+/**
+ * @author Rabeb, Mathieu
+ */
+public class ComparerCoordonnees {
 
     //comparateur de la reponse du joueur avec celui du beavers B
 

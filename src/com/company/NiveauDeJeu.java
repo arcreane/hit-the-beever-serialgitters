@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * @author Jesusa
+ */
+
 import java.util.Scanner;
 
 public class NiveauDeJeu {

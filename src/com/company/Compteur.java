@@ -2,8 +2,10 @@ package com.company;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
-public class timer {
+/**
+ * @author Rabeb, Mathieu
+ */
+public class Compteur {
     /*public static void main (final string[]args){
     Timer gameTimer = new Timer();
     TimerTask =new Timer (true);
