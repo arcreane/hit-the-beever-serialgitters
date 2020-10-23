@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Boolean continuer = true;
-        Scanner input = new Scanner(System.in);
         do {
+            Scanner input = new Scanner(System.in);
             //création de menu
             System.out.println("Menu:");
             System.out.println("1 : Nouvelle Partie");
@@ -29,8 +29,6 @@ public class Main {
                //Comparaison coordonnées entrées par joueur et position réelle de la marmotte, si match = incrémente le score de 1 sinon incrémente de zéro
                int incrementationScore = comparerCoordonnees.compare(coordonneesJoueur,coordonneesMarmotte);
                scoreJoueur=scoreJoueur+incrementationScore;
-
-
 
            }else if(menu=="2") {
                System.out.println("menu : resultat");
