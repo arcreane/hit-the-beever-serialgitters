@@ -28,7 +28,9 @@ public class NiveauDeJeu {
         } else{
             System.out.println("Vous avez pas mis le bon choix");
         }
+        System.out.println(difficulty);
         return difficulty;
+
 
     }
 

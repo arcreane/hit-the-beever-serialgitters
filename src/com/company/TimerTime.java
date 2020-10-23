@@ -3,7 +3,7 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -11,20 +11,15 @@ import java.util.TimerTask;
 public class TimerTime extends TimerTask
 {
     BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
-    public int n = 11;
+    public int n = 10;
     //@Override
     public void run()
     {   Timer time= new Timer();
-
-        if(n==11)
-            System.out.println();
-
-        else {
+            //board.refresh(difficulty);
             System.out.println(n);
             System.out.println("entrer coordonées: ");
-        }
-        Scanner sc =new Scanner(reader);
-        //int input= reader.read();
+
+
 
         while (true) {
             try {
@@ -52,7 +47,7 @@ public class TimerTime extends TimerTask
         Timer timer = new Timer();
         timer.schedule(task, 0, 4000);
         System.out.println();
-        System.out.println("Vous avez 10 tours!\nAppuyez sur clavier pour commencer\n");
+        System.out.println("Vous avez 10 tours!\nJeu commence!\n");
 
     }
 }
