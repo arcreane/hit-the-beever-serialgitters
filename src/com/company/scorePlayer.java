@@ -6,22 +6,23 @@ import java.util.Scanner;
 
 public class scoreGame {
     Scanner scanner = new Scanner(System.in);
-    String inputName = new scanner. ;
+    String inputName = scanner.nextLine() ;
     int score ;
-    String[][] arrayScore = new string[inputName][Integer.parseInt(score)];
+    String[][] arrayScore = new String[5][2];
 
-    //fonction pour sauvegarder les scores
+    //fonction qui enregistre le score
 
     private static String saveScore (int score){
         for (int i = 0; i < 5; i++) {
             System.out.println(arrayScore[inputName]+" "+arrayScore[i]);
         }
 
-    return saveScore(score);}
+    return score;}
 
     //trier le tableau de score dans l ordre decroissant
 
     public static String arrayScore(int score){
+        //tri par bulle des scores
 
         int temp ;
         for (int i = 0; i < 5; i++) {

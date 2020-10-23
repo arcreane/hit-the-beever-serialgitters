@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class board {
+public class plateauDeJeu {
 
     public static String refresh(int difficulty){
         String[][] plateau= new String[difficulty][difficulty];
